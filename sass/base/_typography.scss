@@ -1,0 +1,34 @@
+/* Typography */
+body {
+  color: $base-text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+}
+
+p {
+
+}
+
+a {
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: #666;
+    text-decoration: none;
+  }
+}
+
+hr {
+
+}
