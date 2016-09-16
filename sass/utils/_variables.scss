@@ -6,4 +6,27 @@ $base-line-height: 1;
 $header-font-family: Josefin Sans,Arial,Helvetica;
 
 // Colors
+$blue: #1565c0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
 $base-text-color: #fff;
+
+// Breakpoints (media) - Mobile First Design
+// https://teamtreehouse.com/community/are-there-standard-media-query-break-points
+// https://davidwalsh.name/write-media-queries-sass
+// https://css-tricks.com/approaches-media-queries-sass/
+//Many of these will vary from project to project, so define based on my specific needs
+$width-type: min-width;
+$phone-retina-width: 320px;
+$phone-width: 480px;
+$tablet-width: 768px;
+$medium-width: 992px;
+$desktop-width: 1200px;
+
+// Other sizes
+
+
+// Border

@@ -1,9 +1,9 @@
 /* Imports */
 // Compass
-@import "compass";
+@import "compass/css3/flexbox";
+@import "compass/reset";
 
 // Utils
-@import "compass/reset";
 @import "utils/functions";
 @import "utils/mixins";
 @import "utils/placeholders";
@@ -18,3 +18,13 @@
 // Layout
 @import "layout/footer";
 @import "layout/header";
+
+//.row {
+//  @include display-flex;
+//}
+
+//p {
+//  @include phone {
+//    font-size: 18px;
+//  }
+//}

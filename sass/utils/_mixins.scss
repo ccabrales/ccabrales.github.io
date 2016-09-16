@@ -1,3 +1,31 @@
-@mixin test {
-  color: blue;
+// Media Queries
+//iPhone retina
+@mixin phone-retina {
+  @media only screen and (#{$width-type}: #{$phone-retina-width}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media only screen and (#{$width-type}: #{$phone-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (#{$width-type}: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (#{$width-type}: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (#{$width-type}: #{$desktop-width}) {
+    @content;
+  }
 }
