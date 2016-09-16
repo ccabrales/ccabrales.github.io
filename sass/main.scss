@@ -2,6 +2,13 @@
 // Compass
 @import "compass";
 
+// Utils
+@import "compass/reset";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/placeholders";
+@import "utils/variables";
+
 // Base
 @import "base/typography";
 
@@ -11,10 +18,3 @@
 // Layout
 @import "layout/footer";
 @import "layout/header";
-
-// Utils
-@import "compass/reset";
-@import "utils/functions";
-@import "utils/mixins";
-@import "utils/placeholders";
-@import "utils/variables";

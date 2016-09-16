@@ -1,4 +1,7 @@
-/* Imports */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -62,29 +65,4 @@ a img {
 /* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
-}
-
-/* Typography */
-/* line 2, ../sass/base/_typography.scss */
-body {
-  color: #fff;
-  font-family: Roboto, Arial, Helvetica;
-  font-size: 1em;
-  line-height: 1;
-}
-
-/* line 9, ../sass/base/_typography.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Josefin Sans, Arial, Helvetica;
-}
-
-/* line 24, ../sass/base/_typography.scss */
-a:active, a:focus, a:hover {
-  color: #666;
-  text-decoration: none;
 }
