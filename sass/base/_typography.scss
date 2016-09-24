@@ -1,9 +1,8 @@
 /* Typography */
 body {
-  color: $base-text-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  color: #{$base-text-color};
+  font: #{$base-font-style};
+  line-height: #{$base-line-height};
 }
 
 h1,
@@ -12,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $header-font-family;
+  font-family: #{$header-font-family};
 }
 
 p {
