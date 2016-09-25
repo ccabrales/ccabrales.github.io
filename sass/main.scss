@@ -34,6 +34,75 @@ html {
   position: relative;
 }
 
+body {
+  padding-top: 50px;
+  background:url(../images/bg.jpg) right no-repeat fixed #fff;background-size: cover;
+}
+
+#about {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+
+  @include phone-retina {
+    margin-bottom: #{$section-separation-small};
+  }
+
+  @include tablet {
+    margin-bottom: #{$section-separation};
+  }
+
+  img {
+    margin-bottom: #{$default-margin-bottom};
+  }
+
+  h1 {
+    text-transform: capitalize;
+    margin-bottom: #{$default-margin-bottom};
+  }
+
+  p {
+    @include phone-retina {
+      display: none;
+    }
+
+    @include tablet {
+      display: initial;
+    }
+  }
+}
+
+#contact {
+  text-align: center;
+  background-color: #111;
+  color: #aaa;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: #aaa;
+    margin: 0 1em;
+
+    .fa-2x {
+      @include phone-retina {
+        font-size: 1.25em;
+      }
+
+      @include medium {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
 .gototop {
   @include phone-retina {
     display: none;

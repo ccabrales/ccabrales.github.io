@@ -70,7 +70,7 @@ body {
   color: #fff;
   font: 300 15px/15px Roboto, Arial, Helvetica;
   line-height: 1;
-  margin-bottom: auto;
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 310px) {
@@ -113,57 +113,33 @@ a:active, a:focus, a:hover {
   width: 100%;
   /* Set the fixed height of the footer here */
   font-size: 1em;
-  height: auto;
+  height: 40px;
+  line-height: 40px;
   background-color: #111;
   color: #aaa;
   text-align: center;
 }
-/* line 12, ../sass/layout/_footer.scss */
-.footer h2 {
-  margin-bottom: 1em;
-}
-/* line 16, ../sass/layout/_footer.scss */
-.footer p {
-  margin-bottom: 1.7em;
-}
-/* line 20, ../sass/layout/_footer.scss */
-.footer a {
-  color: #aaa;
-  margin: 0 1em;
-}
 @media only screen and (min-width: 310px) {
-  /* line 24, ../sass/layout/_footer.scss */
-  .footer a .fa-2x {
-    font-size: 1.5em;
-  }
-}
-@media only screen and (min-width: 992px) {
-  /* line 24, ../sass/layout/_footer.scss */
-  .footer a .fa-2x {
-    font-size: 2em;
-  }
-}
-@media only screen and (min-width: 310px) {
-  /* line 35, ../sass/layout/_footer.scss */
+  /* line 13, ../sass/layout/_footer.scss */
   .footer span {
     font-size: 0.75em;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 35, ../sass/layout/_footer.scss */
+  /* line 13, ../sass/layout/_footer.scss */
   .footer span {
     font-size: inherit;
   }
 }
 
 @media only screen and (min-width: 310px) {
-  /* line 46, ../sass/layout/_footer.scss */
+  /* line 24, ../sass/layout/_footer.scss */
   .spacer {
     padding: 1.3em 0;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 46, ../sass/layout/_footer.scss */
+  /* line 24, ../sass/layout/_footer.scss */
   .spacer {
     padding: 3.5em 0;
   }
@@ -202,14 +178,95 @@ html {
   position: relative;
 }
 
+/* line 37, ../sass/main.scss */
+body {
+  padding-top: 50px;
+  background: url(../images/bg.jpg) right no-repeat fixed #fff;
+  background-size: cover;
+}
+
+/* line 42, ../sass/main.scss */
+#about {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
 @media only screen and (min-width: 310px) {
-  /* line 37, ../sass/main.scss */
+  /* line 42, ../sass/main.scss */
+  #about {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 42, ../sass/main.scss */
+  #about {
+    margin-bottom: 50px;
+  }
+}
+/* line 61, ../sass/main.scss */
+#about img {
+  margin-bottom: 15px;
+}
+/* line 65, ../sass/main.scss */
+#about h1 {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 310px) {
+  /* line 70, ../sass/main.scss */
+  #about p {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 70, ../sass/main.scss */
+  #about p {
+    display: initial;
+  }
+}
+
+/* line 81, ../sass/main.scss */
+#contact {
+  text-align: center;
+  background-color: #111;
+  color: #aaa;
+}
+/* line 86, ../sass/main.scss */
+#contact h2 {
+  margin-bottom: 1em;
+}
+/* line 90, ../sass/main.scss */
+#contact a {
+  color: #aaa;
+  margin: 0 1em;
+}
+@media only screen and (min-width: 310px) {
+  /* line 94, ../sass/main.scss */
+  #contact a .fa-2x {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 94, ../sass/main.scss */
+  #contact a .fa-2x {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 310px) {
+  /* line 106, ../sass/main.scss */
   .gototop {
     display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 37, ../sass/main.scss */
+  /* line 106, ../sass/main.scss */
   .gototop {
     display: initial;
     position: fixed;
@@ -220,7 +277,7 @@ html {
     color: #fff;
   }
 }
-/* line 52, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .gototop i {
   line-height: 0.5em;
 }
