@@ -29,45 +29,25 @@
 //  }
 //}
 
-// Header Navbar
-#main-navbar {
-  background-color: #{$header-bg};
-  padding: 0px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-
-  .navbar-toggler {
-    color: #{$base-text-color};
-  }
-
-  ul {
-    li {
-      margin-left: 0px;
-
-      a {
-        color: #{$header-text-color};
-        line-height: #{$header-line-height};
-        padding: #{$header-padding};
-      }
-
-      &.active {
-        a {
-          color: #555555;
-          background-color: #e7e7e7;
-        }
-      }
-    }
-  }
+html {
+  min-height: 100%;
+  position: relative;
 }
 
-
 .gototop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(0,0,0,0.5);
-  padding: 10px;
-  color: #fff;
+  @include phone-retina {
+    display: none;
+  }
+
+  @include medium {
+    display: initial;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+  }
 
   i {
     line-height: 0.5em;

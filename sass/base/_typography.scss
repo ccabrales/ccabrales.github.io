@@ -3,6 +3,7 @@ body {
   color: #{$base-text-color};
   font: #{$base-font-style};
   line-height: #{$base-line-height};
+  margin-bottom: #{$footer-height};
 }
 
 h1,
@@ -11,7 +12,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: #{$header-font-family};
+  @include phone-retina {
+    font: #{$header-font-small};
+  }
+
+  @include medium {
+    font: #{$header-font};
+  }
 }
 
 p {
@@ -20,6 +27,7 @@ p {
 
 a {
 
+  text-decoration: none;
   &:active,
   &:focus,
   &:hover {

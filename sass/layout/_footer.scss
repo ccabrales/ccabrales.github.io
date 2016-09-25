@@ -1,0 +1,54 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  font-size: 1em;
+  height: #{$footer-height};
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 1.7em;
+  }
+
+  a {
+    color: #aaa;
+    margin: 0 1em;
+
+    .fa-2x {
+      @include phone-retina {
+        font-size: 1.5em;
+      }
+
+      @include medium {
+        font-size: 2em;
+      }
+    }
+  }
+
+  span {
+    @include phone-retina {
+      font-size: 0.75em;
+    }
+
+    @include medium {
+      font-size: inherit;
+    }
+  }
+}
+
+.spacer {
+  @include phone-retina {
+    padding: 1.3em 0;
+  }
+
+  @include medium {
+    padding: 3.5em 0;
+  }
+}

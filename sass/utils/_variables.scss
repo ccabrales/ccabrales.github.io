@@ -4,6 +4,8 @@ $base-font-family: Roboto,Arial,Helvetica;
 $base-font-style: 300 15px/15px Roboto,Arial,Helvetica;
 $base-line-height: 1;
 
+$header-font: 300 2.5em Josefin Sans,Arial,Helvetica;
+$header-font-small: 300 1.5em Josefin Sans, Arial, Helvetica;
 $header-font-family: Josefin Sans,Arial,Helvetica;
 $header-line-height: 28px;
 
@@ -21,15 +23,17 @@ $header-text-color: #777777;
 //Many of these will vary from project to project, so define based on my specific needs
 $width-type: min-width;
 $phone-retina-width: 310px;
-$phone-width: 480px;
+$phone-width: 544px;
 $tablet-width: 768px;
 $medium-width: 992px;
 $desktop-width: 1200px;
 
 // Other sizes
 
-
 // Border
 
 // Padding
 $header-padding: 10px 15px;
+
+// Footer
+$footer-height: auto;
