@@ -29,3 +29,18 @@
     @content;
   }
 }
+
+@mixin section-separation {
+  @include phone-retina {
+    margin-bottom: #{$section-separation-small};
+  }
+
+  @include tablet {
+    margin-bottom: #{$section-separation};
+  }
+}
+
+@mixin flex-display {
+  display: flex;
+  display: -webkit-flex;
+}

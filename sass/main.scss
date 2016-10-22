@@ -40,8 +40,7 @@ body {
 }
 
 #about {
-  display: flex;
-  display: -webkit-flex;
+  @include flex-display;
   flex-direction: column;
   -webkit-flex-direction: column;
   -webkit-align-items: center;
@@ -50,13 +49,7 @@ body {
   justify-content: center;
   text-align: center;
 
-  @include phone-retina {
-    margin-bottom: #{$section-separation-small};
-  }
-
-  @include tablet {
-    margin-bottom: #{$section-separation};
-  }
+  @include section-separation;
 
   img {
     margin-bottom: #{$default-margin-bottom};
@@ -75,6 +68,47 @@ body {
     @include tablet {
       display: initial;
     }
+  }
+}
+
+#projects {
+  @include section-separation;
+
+  h2 {
+    text-align: center;
+    margin-bottom: #{$default-margin-bottom};
+  }
+
+  #project-grid {
+    //@include flex-display;
+    //-webkit-align-items: center;
+    //align-items: center;
+    //-webkit-justify-content: center;
+    //justify-content: center;
+    ///* You can set flex-wrap and flex-direction individually */
+    //-webkit-flex-direction: row;
+    //flex-direction: row;
+    //-webkit-flex-wrap: wrap;
+    //flex-wrap: wrap;
+    ///* Or do it all in one line with flex flow */
+    //-webkit-flex-flow: row wrap;
+    //flex-flow: row wrap;
+    ///* tweak the where items line up on the row */
+    ///* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+    //-webkit-align-content: flex-end;
+    //align-content: flex-end;
+    //
+    //.grid-cell {
+    //  flex: 1;
+    //  -webkit-flex: 1;
+    //  width: 33vw;
+    //  height: 33vw;
+    //  //min-width: 33vw;
+    //  //min-height: 100px;
+    //}
+    //.grid-cell {
+    //  height: #{$grid-cell-height};
+    //}
   }
 }
 
