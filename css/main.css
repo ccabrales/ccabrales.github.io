@@ -96,6 +96,11 @@ body {
   }
 }
 
+/* line 24, ../sass/base/_typography.scss */
+p {
+  line-height: 1.7em;
+}
+
 /* line 28, ../sass/base/_typography.scss */
 a {
   text-decoration: none;
@@ -186,6 +191,16 @@ body {
 }
 
 /* line 42, ../sass/main.scss */
+.btn, a, .btn:hover, a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none !important;
+}
+
+/* line 51, ../sass/main.scss */
 #about {
   display: flex;
   display: -webkit-flex;
@@ -198,93 +213,151 @@ body {
   text-align: center;
 }
 @media only screen and (min-width: 310px) {
-  /* line 42, ../sass/main.scss */
+  /* line 51, ../sass/main.scss */
   #about {
     margin-bottom: 25px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 42, ../sass/main.scss */
+  /* line 51, ../sass/main.scss */
   #about {
     margin-bottom: 50px;
   }
 }
-/* line 54, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 #about img {
   margin-bottom: 15px;
 }
-/* line 58, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 #about h1 {
   text-transform: capitalize;
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 310px) {
-  /* line 63, ../sass/main.scss */
+  /* line 72, ../sass/main.scss */
   #about p {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 63, ../sass/main.scss */
+  /* line 72, ../sass/main.scss */
   #about p {
     display: initial;
   }
 }
 
 @media only screen and (min-width: 310px) {
-  /* line 74, ../sass/main.scss */
+  /* line 83, ../sass/main.scss */
   #projects {
     margin-bottom: 25px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 74, ../sass/main.scss */
+  /* line 83, ../sass/main.scss */
   #projects {
     margin-bottom: 50px;
   }
 }
-/* line 77, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 #projects h2 {
   text-align: center;
   margin-bottom: 15px;
 }
 
-/* line 115, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
+.grid-cell {
+  cursor: pointer;
+  padding: 0px;
+  text-align: center;
+}
+/* line 98, ../sass/main.scss */
+.grid-cell:hover h2 {
+  opacity: 1;
+}
+/* line 103, ../sass/main.scss */
+.grid-cell .grid-img-container {
+  width: 100%;
+}
+/* line 108, ../sass/main.scss */
+.grid-cell .grid-img-container .port-image {
+  width: 100%;
+}
+/* line 113, ../sass/main.scss */
+.grid-cell figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 130, ../sass/main.scss */
+.grid-cell figcaption h2 {
+  opacity: 0;
+}
+/* line 134, ../sass/main.scss */
+.grid-cell figcaption p {
+  font-size: 68.5%;
+  letter-spacing: 1px;
+}
+/* line 139, ../sass/main.scss */
+.grid-cell figcaption a {
+  border: 1px solid #fff;
+  margin-top: 1em;
+  display: inline-block;
+  color: #fff;
+  padding: 0 2em;
+}
+/* line 146, ../sass/main.scss */
+.grid-cell figcaption a:hover {
+  text-decoration: none;
+  padding: 0 3em;
+}
+
+/* line 154, ../sass/main.scss */
 #contact {
   text-align: center;
   background-color: #111;
   color: #aaa;
 }
-/* line 120, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 #contact h2 {
   margin-bottom: 1em;
 }
-/* line 124, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 #contact a {
   color: #aaa;
   margin: 0 1em;
 }
 @media only screen and (min-width: 310px) {
-  /* line 128, ../sass/main.scss */
+  /* line 167, ../sass/main.scss */
   #contact a .fa-2x {
     font-size: 1.25em;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 128, ../sass/main.scss */
+  /* line 167, ../sass/main.scss */
   #contact a .fa-2x {
     font-size: 2em;
   }
 }
 
 @media only screen and (min-width: 310px) {
-  /* line 140, ../sass/main.scss */
+  /* line 179, ../sass/main.scss */
   .gototop {
     display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 140, ../sass/main.scss */
+  /* line 179, ../sass/main.scss */
   .gototop {
     display: initial;
     position: fixed;
@@ -295,7 +368,7 @@ body {
     color: #fff;
   }
 }
-/* line 155, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 .gototop i {
   line-height: 0.5em;
 }
