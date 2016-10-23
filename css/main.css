@@ -177,20 +177,20 @@ a:active, a:focus, a:hover {
   background-color: #e7e7e7;
 }
 
-/* line 32, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
 html {
   min-height: 100%;
   position: relative;
 }
 
-/* line 37, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 body {
   padding-top: 50px;
   background: url(../images/bg.jpg) right no-repeat fixed #fff;
   background-size: cover;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 .btn, a, .btn:hover, a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -200,7 +200,25 @@ body {
   outline: none !important;
 }
 
-/* line 51, ../sass/main.scss */
+@media only screen and (min-width: 310px) {
+  /* line 43, ../sass/main.scss */
+  .portfolio-section {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 43, ../sass/main.scss */
+  .portfolio-section {
+    margin-bottom: 50px;
+  }
+}
+/* line 49, ../sass/utils/_mixins.scss */
+.portfolio-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* line 48, ../sass/main.scss */
 #about {
   display: flex;
   display: -webkit-flex;
@@ -212,95 +230,47 @@ body {
   justify-content: center;
   text-align: center;
 }
-@media only screen and (min-width: 310px) {
-  /* line 51, ../sass/main.scss */
-  #about {
-    margin-bottom: 25px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 51, ../sass/main.scss */
-  #about {
-    margin-bottom: 50px;
-  }
-}
-/* line 63, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 #about img {
   margin-bottom: 15px;
 }
-/* line 67, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 #about h1 {
   text-transform: capitalize;
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 310px) {
-  /* line 72, ../sass/main.scss */
+  /* line 67, ../sass/main.scss */
   #about p {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 72, ../sass/main.scss */
+  /* line 67, ../sass/main.scss */
   #about p {
     display: initial;
   }
 }
 
-@media only screen and (min-width: 310px) {
-  /* line 83, ../sass/main.scss */
-  #projects {
-    margin-bottom: 25px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 83, ../sass/main.scss */
-  #projects {
-    margin-bottom: 50px;
-  }
-}
-/* line 49, ../sass/utils/_mixins.scss */
-#projects h2 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-@media only screen and (min-width: 310px) {
-  /* line 88, ../sass/main.scss */
-  #experience {
-    margin-bottom: 25px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 88, ../sass/main.scss */
-  #experience {
-    margin-bottom: 50px;
-  }
-}
-/* line 49, ../sass/utils/_mixins.scss */
-#experience h2 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-/* line 93, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .grid-cell {
   cursor: pointer;
   padding: 0px;
   text-align: center;
 }
-/* line 99, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .grid-cell:hover h2 {
   opacity: 1;
 }
-/* line 104, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .grid-cell .grid-img-container {
   width: 100%;
 }
-/* line 109, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .grid-cell .grid-img-container .port-image {
   width: 100%;
 }
-/* line 114, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .grid-cell figcaption {
   position: absolute;
   top: 0;
@@ -317,17 +287,17 @@ body {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 131, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .grid-cell figcaption h2 {
   text-shadow: 0 0 3px #000;
   opacity: 0;
 }
-/* line 136, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .grid-cell figcaption p {
   font-size: 68.5%;
   letter-spacing: 1px;
 }
-/* line 141, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .grid-cell figcaption a {
   border: 1px solid #fff;
   margin-top: 1em;
@@ -335,45 +305,45 @@ body {
   color: #fff;
   padding: 0 2em;
 }
-/* line 148, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 .grid-cell figcaption a:hover {
   text-decoration: none;
   padding: 0 3em;
 }
 
-/* line 157, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 .modal .modal-content {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background: #000;
 }
-/* line 161, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 .modal .modal-content h2 {
   text-align: center;
 }
-/* line 165, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 .modal .modal-content .modal-header {
   border-bottom: 0px;
 }
-/* line 168, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .modal .modal-content .modal-header .close {
   color: #ffffff;
 }
-/* line 174, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 .modal .modal-content .modal-body ul {
   margin-top: 0px;
   margin-bottom: 10px;
   list-style-type: circle;
   padding-left: 20px;
 }
-/* line 180, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 .modal .modal-content .modal-body ul li {
   margin-bottom: 10px;
 }
-/* line 186, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .modal .modal-content .modal-footer {
   border-top: 0px;
 }
-/* line 189, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .modal .modal-content .modal-footer .btn {
   color: #ccc;
   border: 1px solid #aaa;
@@ -381,42 +351,42 @@ body {
   padding: 1em 4em;
 }
 
-/* line 199, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 #contact {
   text-align: center;
   background-color: #111;
   color: #aaa;
 }
-/* line 204, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
 #contact h2 {
   margin-bottom: 1em;
 }
-/* line 208, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 #contact a {
   color: #aaa;
   margin: 0 1em;
 }
 @media only screen and (min-width: 310px) {
-  /* line 212, ../sass/main.scss */
+  /* line 197, ../sass/main.scss */
   #contact a .fa-2x {
     font-size: 1.25em;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 212, ../sass/main.scss */
+  /* line 197, ../sass/main.scss */
   #contact a .fa-2x {
     font-size: 2em;
   }
 }
 
 @media only screen and (min-width: 310px) {
-  /* line 224, ../sass/main.scss */
+  /* line 209, ../sass/main.scss */
   .gototop {
     display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 224, ../sass/main.scss */
+  /* line 209, ../sass/main.scss */
   .gototop {
     display: initial;
     position: fixed;
@@ -427,7 +397,7 @@ body {
     color: #fff;
   }
 }
-/* line 239, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 .gototop i {
   line-height: 0.5em;
 }
