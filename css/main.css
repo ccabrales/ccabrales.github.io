@@ -258,31 +258,49 @@ body {
     margin-bottom: 50px;
   }
 }
-/* line 86, ../sass/main.scss */
+/* line 49, ../sass/utils/_mixins.scss */
 #projects h2 {
   text-align: center;
   margin-bottom: 15px;
 }
 
-/* line 92, ../sass/main.scss */
+@media only screen and (min-width: 310px) {
+  /* line 88, ../sass/main.scss */
+  #experience {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 88, ../sass/main.scss */
+  #experience {
+    margin-bottom: 50px;
+  }
+}
+/* line 49, ../sass/utils/_mixins.scss */
+#experience h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* line 93, ../sass/main.scss */
 .grid-cell {
   cursor: pointer;
   padding: 0px;
   text-align: center;
 }
-/* line 98, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .grid-cell:hover h2 {
   opacity: 1;
 }
-/* line 103, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .grid-cell .grid-img-container {
   width: 100%;
 }
-/* line 108, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .grid-cell .grid-img-container .port-image {
   width: 100%;
 }
-/* line 113, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 .grid-cell figcaption {
   position: absolute;
   top: 0;
@@ -299,17 +317,17 @@ body {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 130, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .grid-cell figcaption h2 {
   text-shadow: 0 0 3px #000;
   opacity: 0;
 }
-/* line 135, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .grid-cell figcaption p {
   font-size: 68.5%;
   letter-spacing: 1px;
 }
-/* line 140, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 .grid-cell figcaption a {
   border: 1px solid #fff;
   margin-top: 1em;
@@ -317,45 +335,45 @@ body {
   color: #fff;
   padding: 0 2em;
 }
-/* line 147, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 .grid-cell figcaption a:hover {
   text-decoration: none;
   padding: 0 3em;
 }
 
-/* line 156, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 .modal .modal-content {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background: #000;
 }
-/* line 160, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 .modal .modal-content h2 {
   text-align: center;
 }
-/* line 164, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 .modal .modal-content .modal-header {
   border-bottom: 0px;
 }
-/* line 167, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 .modal .modal-content .modal-header .close {
   color: #ffffff;
 }
-/* line 173, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .modal .modal-content .modal-body ul {
   margin-top: 0px;
   margin-bottom: 10px;
   list-style-type: circle;
   padding-left: 20px;
 }
-/* line 179, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .modal .modal-content .modal-body ul li {
   margin-bottom: 10px;
 }
-/* line 185, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .modal .modal-content .modal-footer {
   border-top: 0px;
 }
-/* line 188, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
 .modal .modal-content .modal-footer .btn {
   color: #ccc;
   border: 1px solid #aaa;
@@ -363,42 +381,42 @@ body {
   padding: 1em 4em;
 }
 
-/* line 198, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 #contact {
   text-align: center;
   background-color: #111;
   color: #aaa;
 }
-/* line 203, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 #contact h2 {
   margin-bottom: 1em;
 }
-/* line 207, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 #contact a {
   color: #aaa;
   margin: 0 1em;
 }
 @media only screen and (min-width: 310px) {
-  /* line 211, ../sass/main.scss */
+  /* line 212, ../sass/main.scss */
   #contact a .fa-2x {
     font-size: 1.25em;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 211, ../sass/main.scss */
+  /* line 212, ../sass/main.scss */
   #contact a .fa-2x {
     font-size: 2em;
   }
 }
 
 @media only screen and (min-width: 310px) {
-  /* line 223, ../sass/main.scss */
+  /* line 224, ../sass/main.scss */
   .gototop {
     display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 223, ../sass/main.scss */
+  /* line 224, ../sass/main.scss */
   .gototop {
     display: initial;
     position: fixed;
@@ -409,7 +427,7 @@ body {
     color: #fff;
   }
 }
-/* line 238, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .gototop i {
   line-height: 0.5em;
 }

@@ -82,11 +82,12 @@ body {
 
 #projects {
   @include section-separation;
+  @include section-title;
+}
 
-  h2 {
-    text-align: center;
-    margin-bottom: #{$default-margin-bottom};
-  }
+#experience {
+  @include section-separation;
+  @include section-title;
 }
 
 .grid-cell {
