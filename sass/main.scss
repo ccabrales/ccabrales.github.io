@@ -124,15 +124,31 @@ body {
     }
 
     a {
-      border:1px solid #fff;
       margin-top: 1em;
       display: inline-block;
       color: #fff;
       padding: 0 2em;
+    }
 
+    a:not(.app-store-icon) {
+      border:1px solid #fff;
       &:hover {
         text-decoration: none;
         padding: 0 3em;
+      }
+    }
+  }
+}
+
+#skills {
+  .chart-container {
+    //@include flex-center-horizontal;
+
+    #skills-chart {
+
+      .chart {
+        width: 100%;
+        min-height: 450px;
       }
     }
   }
@@ -169,6 +185,7 @@ body {
     }
 
     .modal-footer {
+      @include flex-center-right;
       border-top: 0px;
 
       .btn {
@@ -204,6 +221,14 @@ body {
       }
     }
   }
+}
+
+.app-store-icon {
+  display: inline-block;
+  overflow: hidden;
+  background: url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;
+  width: 135px;
+  height: 40px;
 }
 
 .gototop {

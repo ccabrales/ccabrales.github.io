@@ -45,6 +45,28 @@
   display: -webkit-flex;
 }
 
+@mixin flex-center-horizontal {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+@mixin flex-center-right {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: flex-end;
+}
+
 @mixin section-title {
   h2 {
     text-align: center;
