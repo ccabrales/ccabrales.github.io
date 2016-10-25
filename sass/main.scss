@@ -43,6 +43,10 @@ body {
 .portfolio-section {
   @include section-separation;
   @include section-title;
+
+  h2 {
+    margin-bottom: #{$section-separation-small};
+  }
 }
 
 #about {
