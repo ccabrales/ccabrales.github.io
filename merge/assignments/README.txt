@@ -14,7 +14,7 @@ IDEAL LAUNCHING METHODS ON AN ACTUAL DEVICE
 
 If you have an Android phone or device, you can download the apk directly and install it onto your device for use.
 Follow the steps below beginning at step 6 with an open browser. You should download the apk from the following URL:
-"https://ccabrales.github.io/merge/assignments/merge.apk"
+"https://ccabrales.github.io/merge/assignments/merge.apk.zip"
 You may need to enable installation in your device settings. Go to Settings > Security (Or Settings > Applications) and check the box next to "Unknown Sources." A dialogue box may pop up asking you to confirm, and you can just press OK.
 
 TO LAUNCH THE MERGE PROTOTYPE IN A BROWSER FOLLOW THE INSTRUCTIONS BELOW:
@@ -25,7 +25,7 @@ TO LAUNCH THE MERGE PROTOTYPE IN A BROWSER FOLLOW THE INSTRUCTIONS BELOW:
 3. Choose "Launch Emulators" from the top menu
 4. Choose the 720x1280 (320dpi) emulator in the second row on the left, and click on the arrow next to LAUNCH. Select "Android 4.4 - Google APIs" from the drop down menu.
 5. Wait for the emulator to load, and open the emulator's browser
-6. Navigate to the url "https://ccabrales.github.io/merge/assignments/merge.apk" and wait for the file to download
+6. Navigate to the url "https://ccabrales.github.io/merge/assignments/merge.apk.zip" and wait for the file to download
 7. Once downloaded, click on the completed download and install the Merge apk
 8. Select open, and now Merge is running in your emulator!
 
