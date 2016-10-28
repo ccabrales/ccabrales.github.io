@@ -1,0 +1,109 @@
+.navbar-default {
+  background-color: #CAB7A2;
+  border-color: #BFB59E;
+}
+
+body {
+  font-family: Avenir, 'avenir next', Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #454E55;
+  padding-bottom: 50px;
+  background-color: #eee;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+
+blockquote {
+  margin: 0px;
+}
+
+
+h1, h3 {
+  color: #858786;
+}
+
+hr {
+  border-top: 1px solid #e0e0e0;
+  margin: 0px;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+#review {
+    overflow: hidden;
+}
+
+.btn-anon {
+  width: 100%;
+  background-color: #965860;
+  color: #eee;
+}
+
+.btn-anon:hover {
+  color: #fff;
+}
+
+.btn-review {
+  background-color: #CAB7A2;
+  color: #454E55;
+  border-color: #e0e0e0;
+}
+
+.btn .btn-review:hover {
+  color: #fff;
+}
+
+.btn-named {
+  width: 100%;
+  background-color: #858786;
+  color: #eee;
+}
+
+.btn-named:hover {
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  .main-row {
+    padding-top: 60px;
+  }
+}
+
+
+#pick {
+  padding-top: 30px;
+}
+
+thead td {
+  font-weight: bold;
+}
+
+.icon {
+  max-height: 50px;
+}
+
+.fa {
+  color: #EE3418;
+}
+
+.review-date {
+  font-size: 13px;
+}
+
+.review-helpfulness {
+  font-size: 15px;
+}
+
+#check {
+  max-height: 300px;
+}

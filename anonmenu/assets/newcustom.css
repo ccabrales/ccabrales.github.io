@@ -1,0 +1,272 @@
+/*gold rgb(246, 197, 120)*/
+/*brown 199, 181, 165*/
+/*  green: rgb(170, 210, 120);
+*/
+
+h3.tagline {
+  color: rgb(199, 181, 165);
+  margin-top: 0px;
+}
+
+.selected-review {
+  font-size: 16px;
+  color: rgba(198, 180, 164, 0.8);
+}
+
+div.upvote span.count {
+  color: #888;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+img.order {
+  max-width: 100px;
+}
+
+div.product {
+  padding-bottom: 60px;
+}
+
+.zero-clipboard {
+  display: none;
+}
+
+span.highlight {
+  color: rgb(231, 148, 178);
+  font-weight: 700;
+}
+
+p.selected-reviewer {
+  font-style: italic;
+  color: rgba(198, 180, 164, 0.8);
+}
+
+.review-row {
+  padding-top: 10px;
+}
+
+div.upvote {
+  padding-top: 10px;
+}
+
+hr {
+  /*margin-top: 10px !important;*/
+  padding-bottom: 10px;
+}
+
+span.price {
+  /*padding-top: 30px;*/
+  text-align: right;
+  font-size: 20px;
+}
+
+.navbar-default {
+  background-color: #2BB7B0;
+  /*border-color: #BFB59E;*/
+}
+
+body {
+  font-family: Avenir, 'avenir next', Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #454E55;
+  padding-bottom: 50px;
+  background-color: #FEFBFF;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+
+blockquote {
+  margin: 0px;
+}
+
+
+h1, h3 {
+  color: #858786;
+}
+
+h1, h2, h3, h3, h4, h5, h6, .navbar-brand, .navbar-nav > li > a {
+  font-family: "gothammedium", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: rgb(246, 197, 120);
+  text-transform: uppercase !important;
+}
+
+.navbar-default .navbar-brand, .navbar-nav > li > a {
+  color: #fff !important;
+  /*border: 1px solid #fff;
+  border-radius: 9px;*/
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+.btn-expand, .btn-expand:hover, .btn-expand:active {
+  font-family: "gothammedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2BB7B0;
+  text-transform: uppercase;
+  border-color: #2BB7B0;
+}
+
+.center {
+  text-align: center;
+}
+
+hr {
+  border-top: 1px solid #e0e0e0;
+  margin: 0px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+#review {
+  overflow: hidden;
+}
+
+.btn-anon {
+  width: 100%;
+  background-color: #965860;
+  color: #eee;
+}
+
+.btn-anon:hover {
+  color: #fff;
+}
+
+.btn-review {
+  background-color: #CAB7A2;
+  color: #454E55;
+  border-color: #e0e0e0;
+}
+
+.btn .btn-review:hover {
+  color: #fff;
+}
+
+.btn-named {
+  width: 100%;
+  background-color: #858786;
+  color: #eee;
+}
+
+.btn-named:hover {
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  .main-row {
+    padding-top: 60px;
+  }
+}
+
+
+#pick {
+  padding-top: 30px;
+}
+
+thead td {
+  font-weight: bold;
+}
+
+.icon {
+  max-height: 50px;
+}
+
+.fa {
+  color: #EE3418;
+}
+
+.review-date {
+  font-size: 13px;
+}
+
+.review-helpfulness {
+  font-size: 15px;
+}
+
+#check {
+  max-height: 300px;
+}
+
+.col-xs-4 {
+  padding-left: 0px;
+}
+
+@font-face {
+  font-family: 'entypo';
+  src: url('../fonts/entypo-social.eot');
+  src: url('../fonts/entypo-social.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/entypo-social.woff') format('woff'),
+  url('../fonts/entypo-social.ttf') format('truetype'),
+  url('../fonts/entypo-social.svg#gothambook') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+  @font-face {
+    font-family: 'gothamthin';
+    src: url('../fonts/gotham-thin-webfont.eot');
+    src: url('../fonts/gotham-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham-thin-webfont.woff') format('woff'),
+    url('../fonts/gotham-thin-webfont.ttf') format('truetype'),
+    url('../fonts/gotham-thin-webfont.svg#gothambook') format('svg');
+    font-weight: normal;
+    font-style: normal; }
+
+    @font-face {
+      font-family: 'gothambook';
+      src: url('../fonts/gotham-book-webfont.eot');
+      src: url('../fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/gotham-book-webfont.woff') format('woff'),
+      url('../fonts/gotham-book-webfont.ttf') format('truetype'),
+      url('../fonts/gotham-book-webfont.svg#gothambook') format('svg');
+      font-weight: normal;
+      font-style: normal; }
+
+      @font-face {
+        font-family: 'gothambold';
+        src: url('../fonts/gotham-bold-webfont.eot');
+        src: url('../fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham-bold-webfont.woff') format('woff'),
+        url('../fonts/gotham-bold-webfont.ttf') format('truetype'),
+        url('../fonts/gotham-bold-webfont.svg#gothambold') format('svg');
+        font-weight: normal;
+        font-style: normal; }
+
+        @font-face {
+          font-family: 'gothamultra';
+          src: url('../fonts/gotham-ultra-webfont.eot');
+          src: url('../fonts/gotham-ultra-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/gotham-ultra-webfont.woff') format('woff'),
+          url('../fonts/gotham-ultra-webfont.ttf') format('truetype'),
+          url('../fonts/gotham-ultra-webfont.svg#gothamultra') format('svg');
+          font-weight: normal;
+          font-style: normal; }
+
+          @font-face {
+            font-family: 'gothammedium';
+            src: url('../fonts/gotham-medium-webfont.eot');
+            src: url('../fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/gotham-medium-webfont.woff') format('woff'),
+            url('../fonts/gotham-medium-webfont.ttf') format('truetype'),
+            url('../fonts/gotham-medium-webfont.svg#gothammedium') format('svg');
+            font-weight: normal;
+            font-style: normal; }
+
+            @font-face {
+              font-family: 'gothamblack';
+              src: url('../fonts/gotham-black-webfont.eot');
+              src: url('../fonts/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+              url('../fonts/gotham-black-webfont.woff') format('woff'),
+              url('../fonts/gotham-black-webfont.ttf') format('truetype'),
+              url('../fonts/gotham-black-webfont.svg#gothamblack') format('svg');
+              font-weight: normal;
+              font-style: normal; }
