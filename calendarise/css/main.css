@@ -1,0 +1,56 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    background-image: url("../images/footer_lodyas.png");
+    color: whitesmoke;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.instructions {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.classes {
+    width: 100%;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+input, textarea {
+    color: black;
+}
+
+a {
+    color: pink;
+}
+
+a:hover {
+    color: deeppink;
+    text-decoration: none;
+}
+
+.site-footer {
+/*    position: absolute;*/
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
