@@ -8,9 +8,9 @@ function drawChart() {
     var data = google.visualization.arrayToDataTable([
       ['Skill', 'Years Experience', { role: 'style' }],
       ['Java', 3, '#F2380F'],
-      ['JavaScript', 1.5, '#D2D911'],
-      ['HTML/CSS', 1.5, '#65BDC9'],
-      ['React', 1.0, '#9380A6'],
+      ['JavaScript', 2.5, '#D2D911'],
+      ['HTML/CSS', 2.5, '#65BDC9'],
+      ['React', 2.0, '#9380A6'],
       ['Swift', 1, '#9BF2CA' ]
     ]);
 
