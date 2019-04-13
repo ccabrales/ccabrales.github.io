@@ -1,5 +1,6 @@
-import Layout from "@portfolio/components/layout";
-import SEO from "@portfolio/components/seo";
+import Layout from "@portfolio/components/gatsby/layout";
+// @ts-ignore
+import SEO from "@portfolio/components/gatsby/seo";
 import * as React from "react";
 
 const NotFoundPage: React.FunctionComponent<{}> = () => (

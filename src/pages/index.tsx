@@ -1,6 +1,7 @@
-import Image from "@portfolio/components/image";
-import Layout from "@portfolio/components/layout";
-import SEO from "@portfolio/components/seo";
+import Image from "@portfolio/components/gatsby/image";
+import Layout from "@portfolio/components/gatsby/layout";
+// @ts-ignore
+import SEO from "@portfolio/components/gatsby/seo";
 import { Link } from "gatsby";
 import * as React from "react";
 

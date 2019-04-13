@@ -8,7 +8,7 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import Helmet from "react-helmet";
-import favicon from "../images/favicon.png";
+import favicon from "../../images/favicon.png";
 
 const SEO = ({
   description = "",

@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import Header from "@portfolio/components/header";
+import Header from "@portfolio/components/gatsby/header";
 import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 import "./layout.scss";
