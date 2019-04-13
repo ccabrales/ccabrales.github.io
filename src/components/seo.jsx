@@ -8,16 +8,9 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import Helmet from "react-helmet";
+import favicon from "../images/favicon.png";
 
-interface Props {
-  description?: string;
-  keywords?: string[];
-  lang?: string;
-  meta?: any[];
-  title: string;
-}
-
-const SEO: React.FunctionComponent<Props> = ({
+const SEO = ({
   description = "",
   lang = "en",
   meta = [],
@@ -90,6 +83,7 @@ const SEO: React.FunctionComponent<Props> = ({
             : []
         )
         .concat(meta)}
+      link={[{ rel: "shortcut icon", href: favicon }]}
     />
   );
 };

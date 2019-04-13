@@ -10,6 +10,6 @@
     "prettier": true
   },
   "linterOptions": {
-    "exclude": ["*.js"]
+    "exclude": ["*.js", "*.jsx"]
   }
 }
