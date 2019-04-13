@@ -1,10 +1,9 @@
-import React from "react";
+import Layout from "@portfolio/components/layout";
+import SEO from "@portfolio/components/seo";
 import { Link } from "gatsby";
+import * as React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-
-const SecondPage = () => (
+const SecondPage: React.FunctionComponent<{}> = () => (
   <Layout>
     <SEO title="Page two" />
     <h1>Hi from the second page</h1>

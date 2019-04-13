@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
+import Header from "@portfolio/components/header";
 import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
-import Header from "./header";
-import "./layout.css";
+import "./layout.scss";
 
 const Layout: React.FunctionComponent<{}> = ({ children }) => (
   <StaticQuery

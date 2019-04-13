@@ -5,6 +5,8 @@
     "interface-name": false,
     "jsx-no-lambda": false,
     "jsx-no-multiline-js": false,
+    "no-implicit-dependencies": [true, ["@portfolio"]],
+    "no-submodule-imports": [true, "@portfolio"],
     "prettier": true
   },
   "linterOptions": {

@@ -1,11 +1,10 @@
-import React from "react";
+import Image from "@portfolio/components/image";
+import Layout from "@portfolio/components/layout";
+import SEO from "@portfolio/components/seo";
 import { Link } from "gatsby";
+import * as React from "react";
 
-import Layout from "../components/layout";
-import Image from "../components/image";
-import SEO from "../components/seo";
-
-const IndexPage = () => (
+const IndexPage: React.FunctionComponent<{}> = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <h1>Hi people</h1>

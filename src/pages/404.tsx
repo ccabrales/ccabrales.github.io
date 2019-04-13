@@ -1,9 +1,8 @@
-import React from "react";
+import Layout from "@portfolio/components/layout";
+import SEO from "@portfolio/components/seo";
+import * as React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-
-const NotFoundPage = () => (
+const NotFoundPage: React.FunctionComponent<{}> = () => (
   <Layout>
     <SEO title="404: Not found" />
     <h1>NOT FOUND</h1>
