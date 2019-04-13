@@ -23,8 +23,10 @@
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
+    "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-tslint": "^0.0.2",
     "gatsby-plugin-typescript": "^2.0.12",
+    "node-sass": "^4.11.0",
     "prettier": "^1.17.0",
     "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
@@ -42,11 +44,13 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "lint": "tslint src/**/*.{ts,tsx}",
-    "prebuild": "yarn type-check && yarn test && yarn lint",
+    "prebuild": "yarn verify",
+    "predeploy": "yarn verify",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "verify": "yarn type-check && yarn test && yarn lint"
   },
   "repository": {
     "type": "git",

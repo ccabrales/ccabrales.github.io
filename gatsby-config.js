@@ -6,19 +6,20 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-typescript',
+      resolve: "gatsby-plugin-typescript",
       options: {
         isTSX: true,
         allExtensions: true,
       },
     },
     {
-      resolve: 'gatsby-plugin-tslint',
+      resolve: "gatsby-plugin-tslint",
       options: {
         test: /\.ts$|\.tsx$/,
-        exclude: /(node_modules|cache|public)/
-      }
+        exclude: /(node_modules|cache|public)/,
+      },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,4 +46,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
