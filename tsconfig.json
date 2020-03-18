@@ -21,7 +21,8 @@
     "jsx": "preserve",
     "paths": {
       "@portfolio/*": ["src/*"]
-    }
+    },
+    "typeRoots": ["src/types"]
   },
   "include": [
     "src"
