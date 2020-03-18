@@ -7,14 +7,14 @@
 
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
-import Helmet, { HelmetProps } from "react-helmet";
-import * as favicon from "../../images/favicon.png";
+import { Helmet, HelmetProps } from "react-helmet";
 
 interface SEOProps {
   description?: string;
   lang?: string;
   keywords?: string[];
   meta?: HelmetProps["meta"];
+  pathname?: string;
   title: string;
 }
 
@@ -23,77 +23,65 @@ const SEO: React.FC<SEOProps> = ({
   lang = "en",
   meta = [],
   keywords = [],
+  pathname,
   title,
 }) => {
-  const { site } = useStaticQuery(
+  const {
+    site: {
+      siteMetadata: {
+        author,
+        defaultDescription,
+        image,
+        defaultTitle,
+        siteUrl,
+      },
+    },
+  } = useStaticQuery(
     graphql`
-      query {
+      query SEO {
         site {
           siteMetadata {
-            title
-            description
             author
+            defaultDescription: description
+            image
+            defaultTitle: title
+            siteUrl: url
           }
         }
       }
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
-  const metadata: HelmetProps["meta"] = meta
-    .concat([
-      {
-        content: metaDescription,
-        name: `description`,
-      },
-      {
-        content: title,
-        property: `og:title`,
-      },
-      {
-        content: metaDescription,
-        property: `og:description`,
-      },
-      {
-        content: `website`,
-        property: `og:type`,
-      },
-      {
-        content: `summary`,
-        name: `twitter:card`,
-      },
-      {
-        content: site.siteMetadata.author,
-        name: `twitter:creator`,
-      },
-      {
-        content: title,
-        name: `twitter:title`,
-      },
-      {
-        content: metaDescription,
-        name: `twitter:description`,
-      },
-    ])
-    .concat(
-      keywords.length > 0
-        ? {
-            content: keywords.join(`, `),
-            name: `keywords`,
-          }
-        : []
-    );
+  const seo = {
+    author,
+    description: description || defaultDescription,
+    image: `${siteUrl}${image}`,
+    title: title || defaultTitle,
+    url: `${siteUrl}${pathname || "/"}`,
+  };
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={metadata}
-      link={[{ rel: "shortcut icon", href: favicon }]}
-    />
+      htmlAttributes={{ lang }}
+      title={seo.title}
+      titleTemplate={`%s | ${seo.title}`}
+    >
+      <meta name="description" content={seo.description} />
+      <meta name="image" content={seo.image} />
+      {keywords.length > 0 && (
+        <meta name="keywords" content={keywords.join(", ")} />
+      )}
+      <meta property="og:url" content={seo.url} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={seo.title} />
+      <meta property="og:description" content={seo.description} />
+      <meta property="og:image" content={seo.image} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={seo.author} />
+      <meta name="twitter:title" content={seo.title} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta name="twitter:image" content={seo.image} />
+    </Helmet>
   );
 };
 
