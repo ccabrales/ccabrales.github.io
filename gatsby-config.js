@@ -15,10 +15,10 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-tslint",
+      resolve: "gatsby-plugin-eslint",
       options: {
-        test: /\.ts$|\.tsx$/,
-        exclude: /(node_modules|cache|public)/,
+        test: /\.ts$|\.tsx$|\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
       },
     },
     `gatsby-plugin-sass`,
