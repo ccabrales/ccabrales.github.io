@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     author: "Casey Cabrales",
     description: "Portfolio of Casey Cabrales",
-    image: "/images/favicon.png",
-    title: `Casey Cabrales`,
+    image: "/images/profile.jpg",
+    title: "Casey Cabrales",
     url: "https://ccabrales.github.io",
   },
   plugins: [

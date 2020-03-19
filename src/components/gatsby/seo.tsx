@@ -7,13 +7,12 @@
 
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
-import { Helmet, HelmetProps } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 interface SEOProps {
   description?: string;
   lang?: string;
   keywords?: string[];
-  meta?: HelmetProps["meta"];
   pathname?: string;
   title: string;
 }
@@ -21,7 +20,6 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({
   description = "",
   lang = "en",
-  meta = [],
   keywords = [],
   pathname,
   title,
@@ -64,7 +62,7 @@ const SEO: React.FC<SEOProps> = ({
     <Helmet
       htmlAttributes={{ lang }}
       title={seo.title}
-      titleTemplate={`%s | ${seo.title}`}
+      titleTemplate={`%s | ${defaultTitle}`}
     >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />

@@ -1,5 +1,4 @@
 import Layout from "@portfolio/components/gatsby/layout";
-// @ts-ignore
 import SEO from "@portfolio/components/gatsby/seo";
 import * as React from "react";
 
