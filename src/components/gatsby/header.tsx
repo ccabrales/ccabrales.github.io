@@ -1,37 +1,21 @@
-import { Link } from "gatsby";
+import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { Link } from "@portfolio/components/common/link";
 import * as React from "react";
 
-interface Props {
+interface HeaderProps {
   siteTitle?: string;
 }
 
-const Header: React.FunctionComponent<Props> = ({ siteTitle = "" }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
+  <AppBar position="fixed" elevation={0}>
+    <Toolbar>
+      <Typography variant="h4" component="h1" gutterBottom>
+        <Link to="/" color="secondary" underline="none">
           {siteTitle}
         </Link>
-      </h1>
-    </div>
-  </header>
+      </Typography>
+    </Toolbar>
+  </AppBar>
 );
 
 export default Header;

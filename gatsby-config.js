@@ -22,6 +22,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    "gatsby-plugin-material-ui",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

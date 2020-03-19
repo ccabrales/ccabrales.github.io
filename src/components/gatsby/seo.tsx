@@ -66,6 +66,14 @@ const SEO: React.FC<SEOProps> = ({
       titleTemplate={`%s | ${defaultTitle}`}
     >
       <link rel="icon" href={favicon} />
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {keywords.length > 0 && (
