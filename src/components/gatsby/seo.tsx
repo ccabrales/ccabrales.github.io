@@ -8,6 +8,7 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import * as favicon from "@portfolio/images/favicon.png";
 
 interface SEOProps {
   description?: string;
@@ -64,6 +65,7 @@ const SEO: React.FC<SEOProps> = ({
       title={seo.title}
       titleTemplate={`%s | ${defaultTitle}`}
     >
+      <link rel="icon" href={favicon} />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {keywords.length > 0 && (

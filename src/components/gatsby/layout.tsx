@@ -34,9 +34,9 @@ const Layout: React.FunctionComponent<{}> = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
+            © {new Date().getFullYear()} Website by Casey Cabrales.
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            All Rights Reserved.
           </footer>
         </div>
       </>
